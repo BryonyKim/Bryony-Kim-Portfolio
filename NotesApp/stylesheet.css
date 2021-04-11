@@ -1,0 +1,228 @@
+/* footer at bottom of page*/
+html {
+   position: relative;
+   min-height: 100%;
+}
+
+/* Make footer stick to bottom of the page using position: absolute; bottom: 0; */
+.footer {
+   position: absolute;
+   bottom: 0;
+   background-color: coral;
+   padding-top: 10px;
+   font-size: 15px;
+   margin-top: 150px;
+}
+
+/*footer links*/
+.footer a {
+   color: black;
+}
+
+/*footer links on hover*/
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Navbar colour */
+.navbar{
+    background-color: coral;
+ }
+
+/*  Notes brand */
+#homeLink:hover{
+    color: white;
+}
+
+/* login link */
+.nav-link {
+    color: black;
+}
+
+/*login link on hover */
+.nav-link:hover {
+    color: white;
+}
+
+/* align logged in as link to right */
+.nav-item{
+    margin-left: auto;
+}
+
+/* dropdown menu main text */
+.dropdown-toggle {
+    color: black;
+}
+
+/* dropdown menu main text on hover */
+.dropdown-toggle:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*dropdown menu styling  */
+.dropdown-menu{
+    background-color: coral;
+    color: black;
+    border:none;
+}
+
+/*links within dropdown menu*/
+.dropdown-item:hover{
+    background-color: coral; 
+    color: white;
+}
+
+/*links within dropdown menu - active */
+.dropdown-menu .active{
+    background-color: coral; 
+    color: white;  
+}
+
+
+/*Landing page main jumbotron for heading, description and sign-up button */
+#description {
+    background-color: transparent;
+}
+
+/*Main background colour  */
+body{
+    background-color:floralwhite;
+}
+
+/*div for note tiles and buttons */
+.contents{
+    height:auto;
+}
+
+/*note divs */
+.note {
+    border: 1px solid coral;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(255,127,80,0.3);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*containing area for note divs */
+#notearea{
+    overflow-y: scroll;
+    max-height: 50vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*note content preview and ... */
+.notetext{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*time and date section of note div */
+.timetext{
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*buttons on notes page that are initially hidden */
+#allnotes, #done, .deletebutton {
+    display: none;
+}
+
+/*note comment box */
+#textArea{
+    display: none;
+    max-height: 30vh;
+    border: 1px solid coral;
+    border-radius: 10px;
+    background-color: rgba(255,127,80,0.1);
+    border-left-width: 20px;
+    margin-bottom: 100px;
+}
+
+/*edit icon - account settings page */
+.bi-pencil-square{
+    font-size: 18px;
+}
+
+/*edit icon account settings page Link */
+.editLink {
+    color: black;
+}
+
+/*edit icon account settings page Link on hover */
+.editLink:hover {
+    color: white;
+}
+
+/*font size of prepend input labels for account settings */
+.settingInputs{
+    font-size: 14px;
+}
+
+/* Prepend and append input label styling for account settings */
+.settings{
+    border: 1px solid coral;
+    border-radius: 10px;
+    background-color: rgba(255,127,80,0.7);
+    color: black;
+}
+
+/*User details section of inputs for account settings - middle section */
+#passwordInput, #emailInput, #usernameInput{
+    background-color: rgba(255,127,80,0.2);
+}
+
+
+
+/*    media queries   */
+
+/*Extra Small  */
+@media (max-width: 575.99px){
+    .footer {
+        font-size: 11px;
+    }   
+    
+    .footer .col{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/*small   */
+@media (min-width: 576px) and (max-width: 767.99px) {
+     .footer {
+         font-size: 13px;
+    }   
+} 
+
+/*small devices  */
+@media (min-device-width: 576px) and (max-device-width: 767.99px) {
+    .footer {
+        position: sticky;
+    }
+} 
+
+
+/*medium  */
+@media (min-width:768px) and (max-width: 991.99px) {
+     .footer {
+         font-size: 14px;
+    }
+}
+
+/*small up  */
+@media (min-width:576px){
+    /*containing area for note divs */
+    #notearea{
+        overflow-y: scroll;
+        height: 40vh;
+    }
+}

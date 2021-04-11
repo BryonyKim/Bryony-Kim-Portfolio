@@ -1,0 +1,132 @@
+/* background picture for jumbotron */
+.jumbotron{
+    background: url(images/BRY_5245_Marrawah_Tasmania_Green%20Point_18%2004%2017_UseQ75.jpg) center;
+    background-size: cover;
+    height: 670px;
+    margin-bottom: 0;
+}
+
+/*size and position of logo */
+.jumbotron .logo {
+    height: 50px; 
+    position: absolute; 
+    top: 10px; 
+    left: 20px; 
+}
+
+/*padding of header */
+.content .display-1 {
+    margin-top: 15px;
+}
+
+/*font-size top paragraph  */
+.content .info {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/*Button margins */
+.content button {
+    margin: 10px 10px 5px 0;
+}
+
+/*link colour in footer */
+.footer a, .footer a:visited {
+    color: gray;
+}
+
+/*link colour in footer - hover */
+.footer a:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+
+/*footer credits font size and line height */
+#credits {
+     font-size: 14px;
+     line-height: 1.9;
+     text-align: end;
+     margin-bottom: 2px;
+}
+
+#bks {
+    line-height: 1.6;
+    margin-bottom: 2px;
+}
+
+
+
+/*  Media Queries  */
+
+
+/* xs */
+@media (max-width: 575.98px) {
+    .content h2 {
+        font-size: 60px;
+        padding-top: 30px;
+    }
+    .content .info {
+        font-size: 18px;
+        padding: 5px 15px;
+        margin: 20px 30px 10px 30px;
+    }
+    .footer #credits {
+        font-size: 9px;
+        line-height: 2.4;
+    }
+    .footer #bks {
+        font-size: 10px;
+        line-height: 2.2;
+    }
+    .content button {
+        margin-top: 5px;
+    }
+    .jumbotron {
+        background: url(images/BRY_5245_Marrawah_Tasmania_Green%20Point_18%2004%2017_sizedQuality60-sm.jpg) center;
+        background-size: cover;
+        height: 670px;
+        margin-bottom: 0;
+    }
+}
+
+/* sm */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .content .display-1 {
+       margin: 5px 0 0 0; 
+       font-size: 88px
+    }
+    .jumbotron {
+        background: url(images/BRY_5245_Marrawah_Tasmania_Green%20Point_18%2004%2017_sizedQuality60-sm.jpg) center;
+        background-size: cover;
+        height: 670px;
+        margin-bottom: 0;
+    }
+}
+
+/* changing margin buttons to keep them on orange part of image on small and smaller medium (until heading goes to single line). */
+@media (min-width: 576px) and (max-width: 925.98px) {
+    .content button {
+        margin-top: 0;
+    }
+}
+
+/* sm and md */
+@media (max-width: 991.98px) {
+    .content {
+        text-align: center;
+    }  
+}
+
+/* lg and xl */
+@media (min-width: 992px){
+    .jumbotron .logo {
+        position: absolute; 
+        top: 20px;
+        left: 30px;
+        height: 60px
+    }
+    .content {
+        padding-top: 30px;
+        padding-left:
+    }
+}

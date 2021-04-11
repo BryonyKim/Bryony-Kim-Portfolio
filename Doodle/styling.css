@@ -1,0 +1,178 @@
+body {
+    background: url(images/Cairns%20Red%20Bamboo_80.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Handlee, cursive;
+    margin: 0;
+}
+
+/*info button */
+#button {
+    float: right;
+    margin: 10px;
+}
+
+/*heading - doodle */
+#Title {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-skip:edges;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    color: rgba( 155, 225, 85, 1 );
+}
+
+/*Containing div for colour picker and width slider */
+#tools {
+    height: 150px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/*colour picker container*/
+#colour {
+    height: 39px;
+}
+
+/*Centralise colour picker */
+#brushColour {
+    margin: 0 auto;
+    height: 23px;
+}
+
+/*position brush width example and give wrapping div a height equal to max height of slider so elements underneath don't move when smaller brush is selected. */
+#brushSize {
+    margin-top: 20px;
+    height: 30px;
+    position: relative;
+}
+
+/*brush thickness example line. Height: min value of slider. position:absolute - centralises line vertically, makes it grow from central point as slider increases. Transform: centralise center point of line. */
+#example {
+    height: 3px;
+    width: 76px;
+    background: rgba( 49, 47, 48, 1);
+    margin: 0 auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/*brush width slider */
+#brushSlider {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*green border around slider handle */
+ #slider .ui-slider-handle {
+     border: 2px solid rgba( 155, 225, 85, 1 );
+}
+
+/*container for drawing canvas */
+#canvasContainer {
+    width: 400px;
+    margin: 0 auto;
+    height: 350px;
+    border: 1px solid rgba( 49, 47, 48, 1);
+}
+
+/*canvas. set height and width in canvas tag so mouse and line drawn sync up. */
+#canvas {
+    margin: 0 auto;
+    background-color: white;
+    cursor: crosshair;
+}
+
+/*wrapper div for buttons*/
+#buttons {
+    max-width: 400px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/*buttons */
+.buttons {
+    height: 40px;
+    width: 80px;
+    margin: 0 auto;
+    float: left;
+}
+
+/*Erase button active class - erase mode */
+.buttonErase {
+    background: linear-gradient(#fc8c8c, #fa0f0f,#fc8c8c);
+    background: -moz-linear-gradient(#fc8c8c, #fa0f0f,#fc8c8c);
+    background: -webkit-linear-gradient(#fc8c8c, #fa0f0f,#fc8c8c);
+    background: -o-linear-gradient(#fc8c8c, #fa0f0f,#fc8c8c);
+    background: -ms-linear-gradient(#fc8c8c, #fa0f0f,#fc8c8c);
+    border-radius: 8px;
+    border: 0.7px solid #fa0f0f;
+    font-weight: bolder;
+    font-family: monospace;
+    letter-spacing: -1px;
+    font-size: 18px;
+    color: rgba( 155, 225, 85, 1 );
+}
+
+/*Erase button active class - erase mode - hover */
+.buttonErase:hover {
+     background: linear-gradient(#fdaaaa, #fa0f0f,#fdaaaa);
+     background: -moz-linear-gradient(#fdaaaa, #fa0f0f,#fdaaaa);
+     background: -webkit-linear-gradient(#fdaaaa, #fa0f0f,#fdaaaa);
+     background: -o-linear-gradient(#fdaaaa, #fa0f0f,#fdaaaa);
+     background: -ms-linear-gradient(#fdaaaa, #fa0f0f,#fdaaaa);
+     border: 0.7px solid #fa0f0f;
+}
+
+/*position save button. transform: ensures that it is centered within the containing div. */
+#save {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+}
+
+/*reset button - align right */
+#reset {
+    position: absolute;
+    right: 0; 
+}
+
+/*footer */
+#footer {
+    margin-top: 100px;
+    color: rgba( 155, 225, 85, 1 );
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/*footer link */
+#footer a{
+    color: rgba( 155, 225, 85, 1 );
+}
+
+/*footer link on hover  */
+#footer a:hover {
+    cursor: pointer;
+    font-style: oblique;
+}

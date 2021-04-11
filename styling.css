@@ -1,0 +1,645 @@
+/*relative for positioning of footer  */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Quicksand, sans-serif; 
+    color: black;
+    font-weight: 500;
+    background: linear-gradient(90deg, lightgray, white, white, white, lightgray);
+}
+
+nav {
+    background-color: lightgray;
+}
+
+/*Logo size */
+.navbar a img {
+    max-height: 80px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+/*Border for the whole navbar */
+.nav-tabs {
+    border-bottom: 2px solid gray;
+}
+
+/* text colour of navbar items */
+#topBar #list .nav-item .nav-link {
+    color: #343a40;
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+/* Styling of nav-bar list-item tabs - removing the border. */
+.nav-tabs #list .nav-item .nav-link {
+    border: transparent;  
+}
+
+/*hover states of navbar tab list items - adding the bottom border. */
+.nav-tabs #list .nav-item .nav-link:hover { 
+    border-bottom: 1px solid gray;
+}
+
+/*hover states of navbar tab list items on home page - this needs 1px of bottom padding removed so the navbar doesn't move when a tab is hovered on. Only needed on home page as no active tab with underline on page load.  */
+#topBar #list .hl .nav-link:hover { 
+    border-bottom: 1px solid gray;
+    padding-bottom: 19px;
+}
+
+/*active state of navbar item - this overrides bootstraps defaults - adds the bottom line to active tabs. */
+.nav-tabs #list .nav-item .nav-link.active, .nav-tabs #list .nav-item .nav-link .show > .nav-link {
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+}
+
+
+.carousel {
+    margin-top: 70px;
+}
+
+#services{
+    padding: 0px;
+}
+
+/*carousel border */
+.carousel-inner {
+    border: 1.5px solid lightgray;
+    background-color: rgba(211,211,211, 0.4);
+    height: 220px;
+}
+
+/* Carousel text. */
+.carousel-inner .carousel-item h4 {
+    font-style: oblique;
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 1.7;
+    color: gray;
+}
+
+/*Carousel Indicators*/
+.carousel .carousel-indicators li {
+    background-color: gray;
+    margin: 50px 7px 10px 5px;
+    width: 20px;
+}
+
+/*carousel content that's just one line. */
+.single{
+    margin-top: 20px;
+}
+
+.clear {
+    height: 70px;
+}
+
+/*Main text styling*/
+#text {
+   line-height: 1.8;
+   font-size: 20px;
+}
+
+.footer {
+    font-size: 13px;
+    color: gray;
+    font-weight: 900;
+    border-top: 1.5px solid lightgray;
+    height: 50px;
+    line-height: 3;
+    margin: 0px;
+    letter-spacing: 0.1px;
+}
+
+/*Headers in Jumbotrons */
+.jumbotron h1 {
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: 70px;
+}
+
+/*main body text */
+.contents {
+    font-size: 20px;
+}
+
+/*list on about page */
+.contents ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*Links  */
+.blogLink {
+    color: gray;
+    font-weight: 900;
+}
+
+/*Links on hover  */
+.blogLink:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Signature - about page  */
+ #myname {
+    text-align: center;
+    font-family: 'Scriptina', 'Bilbo Swash Caps', cursive;
+}
+
+/* cards */
+
+.card {
+    border-color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* image section of card */
+.card .card-img-top {
+    background-size: cover; 
+}
+
+/* text section of card */
+.card .card-body {
+    padding: 15px 10px 10px 10px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+/* Heading links in cards */
+.card .card-body h5 a {
+    color: gray;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/* Headings in cards */
+.card .card-body h5{
+    Height: 50px;
+}
+
+/* Card footer */
+.card .card-footer {
+    padding: 10px 10px 0 10px;
+    font-size: 16px;
+    color: #6c757d;
+    border-top: 0.5px solid gray;
+}
+
+
+/*contact form box*/
+.contactForm {
+     border: 2px solid lightgray;
+     border-radius: 10px;
+     margin-top: 0px;
+     padding: 40px;
+}
+
+/*submit btn on contact form*/
+.contactForm .btn {
+    border: 1.7px solid gray;
+    color: gray;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+/*input boxes on contact form*/
+.contactForm .inp {
+    border: 1px solid gray;
+    background-color: #f8f9fa; 
+}
+
+/*form groups on contact form*/
+.form-group {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.gap{
+    height: 150px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#bks{
+    padding-left: 50px;
+}
+
+/* social media icons */
+.social {
+    height: 30px;
+    widows: 30px;
+    margin: 15px;
+}
+
+/* social media section of footer  */
+.followme {
+    text-align: right;
+    padding-right: 50px;
+}
+
+
+/*Media Queries*/
+
+
+/* xs */
+@media (max-width: 575.98px) {
+/*Logo size */
+navbar a img {
+    width: 120px;
+    padding-top: 7px;   
+}
+    
+/* navbar padding */
+.navbar {
+    padding: 5px 7px 5px 7px;
+}
+    
+/* logo margin */
+.navbar .navbar-brand {
+    margin-right: 0px;
+}
+    
+/* navbar text  */
+#topBar #list .nav-item .nav-link {
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 2px;
+}
+    
+/* menu items position  */
+nav ul li{
+    margin-right: 10px;
+}
+
+/* menu bar padding */
+#list{
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.carousel-inner {
+    padding-top: 0px;
+    height: 170px;
+}
+    
+/* Carousel text. */
+.carousel-inner .carousel-item h4 {  
+    margin: 10px 5px;
+    padding: 30px 10px 10px 10px;
+    font-size: 19px;
+    height: 120px; 
+}
+
+.clear {
+    height: 15px;
+}
+    
+/* Main text */
+#text {
+    margin-top: 40px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+    
+.jumbotron h1 {
+    font-size: 48px;
+}
+    
+.contents {
+    font-size: 18px;
+}
+    
+.card {
+    margin-top: 30px;   
+}
+    
+.card .card-body h5 {
+    padding-top: 15px;
+}
+    
+/*contact form box*/
+.contactForm {
+    padding: 20px;
+}
+    
+/* text next to picture - about page. */
+.signature {
+    margin-top: 20px;
+}
+    
+/* picture - about page */
+.me {
+    text-align: center;   
+}
+
+#myname {
+    text-align: center; 
+}
+    
+.footer, .followme {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+     
+}
+
+/* xs devices */
+@media (max-device-width: 575.98px) {
+/* navbar text  */
+#topBar #list .nav-item .nav-link{
+     padding-left: 0px;
+     padding-right: 0;
+     margin: 0;
+     font-size: 9px;
+}
+    
+/* menu items position  */
+nav ul li{
+    margin-right: 7px;
+}
+
+/*  menu bar padding */
+#list{
+    padding: 0px;
+}
+    
+.navbar a img {
+    width: 100px;   
+}
+   
+}
+
+/* small */
+@media (min-width: 576px) and (max-width: 767.98px) {
+.navbar{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+    
+.navbar a img {
+    width: 180px;
+}
+    
+/* navbar padding */
+#topBar #list .nav-item .nav-link {
+    font-size: 14px;
+}
+    
+/*  hover state bottom margin - nav links */
+#topBar #list .hl .nav-link:hover { 
+    padding-bottom: 14px;
+}
+    
+/*    menu items position  */
+nav ul li{
+    margin-right: 10px;
+}
+
+/*  menu bar padding */
+#list{
+    padding-left: 30px;
+    padding-right: 110px;
+}
+
+.carousel-inner {
+    height: 150px;
+}
+    
+.carousel-inner .carousel-item h4 {  
+    margin: 0px 10px;
+    padding: 30px 25px 10px 25px;
+    font-size: 24px;
+    height: 120px;
+}
+    
+/* Skills list in carousel on home page */
+#skills{
+    margin: 0px; 
+    padding-top: 10px;
+}
+    
+.clear {
+    height: 45px;
+}    
+
+#text {
+     font-size: 19px;
+     margin-bottom: 0;
+}
+    
+.footer {
+     font-size: 13px;
+}
+    
+.jumbotron h1 {
+    font-size: 60px;
+}
+    
+.contents {
+    font-size: 19px;
+}
+    
+/* text section of card */
+.card .card-body {
+    padding: 15px 7px 0px 7px;
+    font-size: 20px;
+    line-height: 1.3;
+    height: 160px;
+}
+    
+.card .card-body h5{
+    margin-bottom: 2px;
+}
+    
+.card .card-footer {
+    padding: 2px 7px 0 7px;
+    font-size: 14px;
+    height: 50px;
+}
+    
+/*contact form box*/
+.contactForm {
+    padding: 20px;
+}
+    
+}
+
+/* medium */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+.navbar a img {
+    width: 200px;
+}
+    
+/*  navbar padding */
+#topBar #list .nav-item .nav-link {
+    padding-bottom: 15px;
+    font-size: 16px;
+}    
+/* menu items position */
+nav ul li:first-child{
+    margin-left: 10px;
+}
+    
+/*  menu items position  */
+nav ul li{
+    margin-right: 10px;
+}
+    
+/*    menu bar padding */
+#list{
+    padding-left: 0px;
+    padding-right: 140px;
+}
+
+.carousel-inner .carousel-item h4 { 
+    margin-top: 18px;
+}
+  
+/*    Skills list in carousel */
+ #skills{
+    margin: 0px; 
+    padding-top: 10px;
+}
+    
+.clear {
+    height: 40px;
+}  
+
+#text {
+    line-height: 1.7;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+    
+.footer {
+    font-size: 14px;
+}
+
+.jumbotron h1 {
+    padding-bottom: 0;  
+}
+    
+.card .card-body h5{
+    margin-bottom: 10px;
+}
+    
+.card .card-body {
+    height: 150px;
+    font-size: 18px;
+}
+.card .card-footer {
+    font-size: 13px;
+    padding: 2px 5px;
+    height: 50px;
+}
+}   
+
+/* lg */
+@media (min-width: 992px) {
+    
+.navbar a img {
+    width: 200px;
+}
+    
+/* navbar padding */
+#topBar #list .nav-item .nav-link {
+    padding-bottom: 15px;
+}
+
+/*   menu items position  */
+nav ul li{
+    margin-right: 40px;
+}
+    
+/*    menu items position  */
+nav ul li:last-child{
+    margin-right: 200px;
+} 
+
+/*  carousel margins  */
+.carousel-inner .carousel-item h4 { 
+    margin: 25px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+    
+.clear {
+    height: 50px;
+} 
+    
+#text{
+    margin-bottom: 0;
+}
+
+.footer {
+    font-size: 14px;
+}
+    
+.card .card-body {
+    height: 150px;
+}
+}
+
+/* xl */
+@media (min-width: 1200px) {
+/* logo */
+.navbar a img {
+    width: 220px;
+}
+    
+/* navbar padding */
+#topBar #list .nav-item .nav-link {
+    padding-bottom: 15px;
+}
+    
+/* menu items position  */
+nav ul li:last-child{
+    margin-right: 200px
+}
+    
+.clear {
+    height: 60px;
+} 
+    
+#text{
+    height: 210px;
+    margin-bottom: 0;
+}
+    
+/* carousel margins  */
+.carousel-inner .carousel-item h4 { 
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.footer {
+    font-size: 14px;
+}
+    
+/* menu bar padding */
+#list{
+    padding-left: 60px;
+    padding-right: 90px;
+}
+}
+
+    

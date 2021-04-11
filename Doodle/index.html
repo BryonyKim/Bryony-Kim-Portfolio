@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width"> 
+
+<!--    JQuery UI cdn -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css">
+
+<title>Doodle</title>
+
+<link rel="stylesheet" href="styling.css">
+
+<!--    font  -->
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+    
+</head>
+    
+<body>
+    
+<!-- Info button  -->
+<div id="info">
+    <div id="button">
+        <button type="button" id="openinfo">?</button>
+    </div> 
+    
+<!-- Div for dialog box containing instructions  -->
+    <div id="instructions" title="Instructions">
+        <p>Click on the colour picker to select a colour to use.</p>
+        <p>Use the slider to select the thickness of the brush. The example line above the slider shows the thickness selected.</p>
+        <p>Use the erase tool to erase unwanted content.</p>
+        <p>Click save to keep your creation for next time you open Doodle.</p>
+        <p>Click reset to clear the canvas and start a new creation.</p>
+    </div>
+</div>
+    
+<!-- Page heading -->
+<div id="Title">Doodle</div>    
+    
+<!-- colour and thickness slider   -->
+<div id="tools">
+<!--    colour picker  -->
+    <div class="input" id="colour"><input type="color" id="brushColour"></div> 
+<!--    brush size example   -->
+    <div id="brushSize" class="input">
+        <div id="example"></div>
+    </div>
+<!--    Brush size slider -->
+    <div class="input" id="brushSlider">
+        <div id="slider"></div>
+    </div>
+</div>
+    
+<!--  Canvas container  -->
+<div id="canvasContainer">
+<!--  canvas    -->
+    <canvas id="canvas" width=400 height=350></canvas>
+</div>
+    
+<!--  Buttons  -->
+<!--  wrapper for buttons  -->
+    <div id="buttons">
+<!--        erase button  -->
+        <div id="erase" >
+            <button type="button" class="buttons" id="erasebtn">Erase</button>
+        </div>
+<!--        save button  -->
+        <div id="save">
+            <button type="button"  class="buttons" id="savebtn">Save</button>
+        </div>
+<!--        reset button  -->
+        <div id="reset">
+            <button type="button" class="buttons" id="resetbtn">Reset</button>
+        </div>
+        
+    </div>
+      
+    
+<!--  Footer    -->
+    
+<div id="footer">
+    <p>By <a href="https://bryonykimwebdev.com">Bryony Kim Web Dev</a></p>
+</div>
+    
+    
+
+<!--    JQuery cdn   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <!--    JQuery UI cdn -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+<!--     Link to script.js file for my script. -->
+<script src="script.js"></script>
+    
+</body>
+</html>
