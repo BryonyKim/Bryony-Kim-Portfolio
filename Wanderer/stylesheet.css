@@ -1,0 +1,930 @@
+/* position: relative for scrollspy */
+body {
+    position: relative;
+    background-color: #f8f9fa;
+    font-family: Handlee, cursive;
+}
+
+/* wanderer text */
+.navbar-brand {
+    line-height: 2.5;
+}
+
+/* logo */
+#logo{
+    margin-top: 5px;
+}
+
+/* aligning items at top of page due to navbar and jumbotron */
+.container-fluid {
+    margin-top: 130px;
+}
+
+/* hover state of home link in side navbar */
+#top:hover{
+    text-decoration: none;
+}
+
+/* dropdown menu button */
+.navbar .navbar-toggler {
+    border: 0.5px solid rgb(23,162,184);
+}
+
+/* dropdown menu, main menu - active mode */
+.dropdown-menu .dropdown-item:active {
+    background-color: rgb(233,236,239);
+}
+
+/* dropdown menu, main menu - when active mode applied */
+.dropdown-menu .active {
+    background-color: rgb(233,236,239);
+}
+
+/* states menu */
+#collapseStates {
+    background-color: rgb(233,236,239);
+}
+
+/* jumbotron for heading bar */
+.jumbotron {
+    text-align: center;
+    margin-top: 10px;
+    height: 155px;  
+    z-index: 1;
+    border-bottom: 0.7px solid rgb(23,162,184);
+    padding-top: 90px;
+    margin-bottom: -80px;
+    position: fixed;
+}
+
+/* height of heading */
+.jumbotron #title {
+    line-height: 15px;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(23,162,184);
+    padding: 0px;
+    margin: 0px;
+}
+
+/* heading link in Jumbotron - hover */
+.jumbotron a:hover {
+    text-decoration: none;
+}
+
+/* navbar within jumbotron */
+.jumbotron #states {
+    line-height: 0px;
+    padding: 0px;
+    height: 30px;
+    margin-top: 80px;
+    font-size: 15px;
+    background-color: rgb(233,236,239);
+}
+
+
+/* collapsible button for bottom navbar */
+.jumbotron #statesMenu, .jumbotron #statesMenuBar {
+    position: absolute;
+    left: 10px;
+    top: -55px;
+    color: black;
+    background-color: rgb(233,236,239);
+}
+
+/* gap between side nav bar and top navbar */
+#sidebar {
+    border-right: 0.7px solid rgb(23,162,184);
+    margin-top: -240px;
+    background-color: rgba(233,236,239,0.3);
+    margin-right: 0px;
+    padding-right: 0;
+    width: 100%;
+    padding-top: 0px;
+}
+
+/* left sidebar navigation pane */
+#navs{
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+/* page links */
+#sidebarItems {
+    margin-top: -150px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+/* scrollbar */
+#side {
+    height: 100vh;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+/* scrollbar background - scrollable area */
+#side::-webkit-scrollbar-track{
+    border-radius: 20px;
+    max-height: calc (100vh-100px);
+    margin-right: auto;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    z-index: -1;
+    background-color: rgba(23,162,184,0.1);
+}
+
+#side::-webkit-scrollbar{
+    width: 10px;
+    z-index: -1;
+}
+
+/* moving part of side scrollbar */
+#side::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(23,162,184,1);
+    background-color: rgba(23,162,184,1);
+    z-index: -1;
+}
+
+/* sidebar first item */
+#sidebarItems:first-child{
+    padding-top: 350px;
+}
+
+/* sidebar last item */
+#sidebarItems:last-child{
+    padding-bottom: 50px;
+}
+
+/* sidebar index page */
+.index #navsIndex {
+    margin-top: -25px; 
+    padding: 0; 
+    position: fixed;
+}
+
+/* place names within side navbar */
+#sidebarItems li a {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* heading within side navbar */
+#sidebarItems li h6 {
+    padding-bottom: 0;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* bullets - side navbar */
+.badge {
+    height: 10px;
+    width: 10px;
+    border-radius: 120px;
+    line-height: 0.7;
+}
+
+/* carousel container */
+#slides {
+    max-height: 500px;
+    max-width: 750px; 
+    margin: auto;
+    margin-bottom: 165px;
+}
+
+/* main carousel */
+.carousel {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    z-index: -1;
+}
+
+/* carousel images */
+.carousel-inner img {
+    margin: 0 auto;
+    z-index: -1;
+}
+
+/* arrows in carousel */
+.carousel-control-next {
+    padding-left: 0px;
+    margin: 0;
+    height: 60%;
+    padding-top: 10%;
+}
+
+.carousel-control-prev {
+    height: 60%;
+    padding-top: 10%;
+    padding-right: 0px; 
+    margin: 0px;
+}
+
+/* carousel writing */
+.carousel-inner .carousel-caption {
+    z-index: 0;
+}
+
+/* caption below image in carousel */
+.carousel .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding: 35px 0px 5px 0px;
+    color: rgb(23,162,184);
+    margin-bottom: 2px;
+}
+
+/* carousel indicators - dots */
+.carousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid #6c757d;
+    z-index: 0;
+    margin-bottom: 5px;
+    margin-top: 0px;
+ }
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+/* align body/main text */
+.content {
+    text-align: justify;
+    padding: 0 15px 0 20px;
+    z-index: -1;
+    margin-left: 0px;
+}
+
+/* main text */
+.places {
+    padding-top: 165px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* main text - headings */
+.places h3 {
+    color: rgb(23,162,184);
+    text-align: left;
+}
+
+/* main text - links */
+.places .links{
+    font-style: oblique;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+/* main text - links - hover */
+.places .links:hover {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+/* main text - spans */
+.places .highlight {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+/* card image overlays */
+.card-img-overlay {
+    padding: 5px;
+}
+
+/* card image overlays - titles */
+.photoTitle {
+    font-size: 16px;
+}
+
+/* card image overlays - titles - links on hover */
+.photoTitle a:hover {
+    text-decoration: none;
+}
+
+/* card header links - hover */
+.card-header a:hover {
+    text-decoration: none;
+}
+
+/* footer */
+.footer {
+    border-top: 0.7px solid rgb(23,162,184);
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+    background-color: rgba(233,236,239, 1);
+    font-size: 12px;
+    z-index: -1;
+}
+
+/* footer links */
+.urls a{
+    color: #343a40;   
+}
+
+/* footer links - hover */
+.urls a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* tooltips */
+.tooltip-inner {
+    padding: 7px 7px 5px 7px; 
+    background-color: rgba(239,240,240, 1);
+    color: #6c757d;
+    border: 0.7px solid rgb(23,162,184);
+    font-family: Handlee, cursive;
+    letter-spacing: 0.7px;
+    z-index: 3;
+}
+
+/* tooltips - no arrow */
+.tooltip.bs-tooltip-bottom .arrow:before, .tooltip.bs-tooltip-top .arrow:before {
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    z-index: 3;
+}
+
+
+
+
+/* media queries */
+
+/* xs */ 
+@media (max-width: 575.98px) {
+    /* jumbotron for heading bar */
+    .jumbotron {
+        height: 120px;
+        padding-top: 55px;
+    }
+    
+    /* aligning items at top of page due to navbar and jumbotron */
+    .container-fluid {
+        margin-top: 110px;
+    }
+    
+    /* dropdown side bar */
+    #sidebar {
+        padding: 5px;
+        margin-top: 20px;
+        position: fixed;
+        background-color: #f8f9fa;
+        border-right: none;
+        width: auto;
+        max-height: 40%;
+        z-index: 2;
+    }
+    
+    /* dropdown side bar - list items */
+    #sidebar #sidebarItems {
+        padding: 5px;
+        margin-top: 0px;
+        width: auto;
+        background-color: #f8f9fa;
+    }
+    
+    /* scrollbar */
+    #side{
+        padding-top: 0;
+        margin-top: 0;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        max-height: 40vh;
+        background-color: #f8f9fa;
+    }
+    
+    /* short sidebar styling for shorter menus */
+    #side.smallMenu{
+        overflow-y: auto;
+        flex-wrap: wrap;
+        height: 20vh; 
+    }
+    
+    /* scrollbar background - scrollable area */
+    #side::-webkit-scrollbar-track{
+        margin-bottom: 0px;
+        max-height: 70vh;
+    }
+    
+    /* menu button */
+    .navbar-toggler {
+        width: 47px;
+        height: 47px;
+        margin: 0px;
+        padding: 2px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    /* page menu button - side menu */
+    #pageMenu {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    
+    /* collapsible button bottom navbar */
+    .jumbotron #statesMenu, .jumbotron #statesMenuBar {
+        left: 5px;
+        top: -58px;
+    }
+       
+    #mainBody {
+        margin: auto;
+        margin: 0 30px;
+    }
+    
+    /* height of heading */
+    .jumbotron #title {
+        line-height: 70px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    /* collapable menu button in jumbotron */
+    #statesMenu{
+        margin-top: 12px;
+    }
+    
+    /* 2nd navbar */
+    .jumbotron #states {
+        line-height: 0px;
+        padding: 0px;
+        height: 0px;
+        margin-top: 60px;  
+    }
+    
+    /* 2nd menu - dropped down */
+    .jumbotron .collapse li {
+        padding-top: 12px;
+        background-color: rgba(233,236,239, 1);
+    }
+
+    /* 2nd menu - dropped down - last item */
+    .jumbotron .collapse li:last-child {
+        padding-bottom: 15px;
+    }
+    
+    /* carousel container */
+    #slides {
+        margin-bottom: -30px;
+    }
+    
+    /* arrows in carousel */
+    .carousel-control-next {
+        padding-left: 0px;
+        margin: 0;
+        height: 75%;
+        padding-top: 10%;
+    }
+
+    .carousel-control-prev {
+        height: 75%;
+        padding-top: 10%;
+        padding-right: 0px; 
+        margin: 0px;
+    }
+    
+    /* carousel caption */
+    .carousel-caption{
+        display: none; 
+    }
+
+    /* gap between kata Tjuta and Uluru sunrise images, NT page */
+    #KJI {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* sm */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* heading banner */
+    .jumbotron {
+        height: 100px;
+        padding-top: 65px;
+    }
+    
+    /* heading text */
+    .jumbotron #title {
+        line-height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 9px;
+        padding-top: 2px;
+    }
+    
+    /* collapse menu button in jumbotron */
+    #statesMenu{
+        margin-top: 15px;
+    }
+    
+    /* 2nd navbar */
+    .jumbotron #states {
+        line-height: 0px;
+        padding: 0px;
+        height: 0px;
+        margin-top: 60px; 
+    }
+    
+    /* 2nd menu - dropped down */
+    .jumbotron .collapse li {
+        padding-top: 12px;
+        background-color: rgba(233,236,239, 1);
+    }
+
+    /* 2nd menu - dropped down - last item */
+    .jumbotron .collapse li:last-child {
+        padding-bottom: 15px;
+    }
+    
+    /* menu button */
+    .navbar-toggler {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        padding: 2px 0;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    /* collapsible button for bottom navbar */
+    .jumbotron #statesMenu, .jumbotron #statesMenuBar {
+        top: -59px;
+    }
+    
+    /* sidebar menu items */
+    #sidebarItems {
+        margin-top: 200px;
+    }
+    
+    /* scrollbar background - scrollable area */
+    #side::-webkit-scrollbar-track{
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    
+    #side::-webkit-scrollbar {
+        height: 100vh;
+    }
+
+    /* side navbar - first item */
+    #sidebarItems:first-child{
+        padding-top: 0px;
+        margin-top: 170px;
+    }
+    
+    /* side navbar - last item */
+    #sidebarItems:last-child{
+        padding-bottom: 100px;
+    }
+    
+    /* carousel container */
+    #slides {
+        margin-bottom: -30px;
+    }
+    
+    /* arrows in carousel */
+    .carousel-control-next {
+        padding-left: 0px;
+        margin: 0;
+        height: 75%;
+        padding-top: 10%;
+    }
+
+    .carousel-control-prev {
+        height: 75%;
+        padding-top: 10%;
+        padding-right: 0px; 
+        margin: 0px;
+    }
+    
+    /* carousel caption */
+    .carousel-caption{
+        display: none; 
+    }
+    
+    /* cards */
+    .card-body {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    /* card columns */
+    .card-columns {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -o-column-count: 2;
+        -ms-column-count: 2;
+    }
+}
+
+
+/* md */
+@media (min-width: 768px) and (max-width: 991.99px) {
+    /* footer */
+    .footer {
+       font-size: 14px; 
+    }
+    
+    /* menu button */
+    .navbar-toggler {
+        width: 55px;
+        height: 55px;
+        margin: 0px;
+        padding: 2px 0;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    /* sidebar menu items */
+    #sidebarItems {
+        margin-top: 150px;
+        padding: 0;
+    }
+    
+    /* side navbar - first item */
+    #sidebarItems:first-child{
+        padding-top: 0px;
+        margin-top: 190px;
+    }
+    
+    /* side navbar - last item */
+    #sidebarItems:last-child{
+        padding-bottom: 100px;
+    }
+    
+    /* scrollbar background - scrollable area */
+    #side::-webkit-scrollbar-track{
+        margin-top: 230px;
+        margin-bottom: 0;
+    }
+    
+    /* cards */
+    .card-body {
+        padding: 10px;
+    }
+    
+    /* carousel indicators - dots */
+    .carousel .carousel-indicators li {
+        margin-bottom: 10px;
+        height: 13px;
+        width: 13px;
+        margin-top: 0px;
+        padding: 0px;
+     }
+}
+
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* align body/main text */
+    .content {
+        padding: 0 40px 0 30px;
+    }
+    
+    /* sidebar menu items */
+    #sidebarItems {
+        padding-left: 5px;
+        margin-top: 150px;
+    }
+    
+    /* side navbar - first item */
+    #sidebarItems:first-child{
+        padding-top: 0px;
+        margin-top: 200px;
+    }
+    
+    /* side navbar - last item */
+    #sidebarItems:last-child{
+        padding-bottom: 100px;
+    }
+    
+    /* scrollbar background - scrollable area */
+    #side::-webkit-scrollbar-track{
+        margin-top: 230px;
+        margin-bottom: 0;
+    }
+    
+    /* side navbar items */
+    #sidebarItems li {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+       
+    /* carousel indicators - dots */
+    .carousel .carousel-indicators li {
+        margin-bottom: 10px;
+        height: 13px;
+        width: 13px;
+     }
+    
+    /* footer */
+    .footer {
+       font-size: 15px;   
+    }
+    
+    /* top menu bar items */
+    .collapse ul li {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+
+
+/* xl */
+@media (min-width: 1200px) {
+    /* align body/main text */
+    .content {
+        padding: 0 40px 0 30px;
+    }
+    
+    /* sidebar menu items */
+    #sidebarItems {
+        padding-left: 20px;
+        margin-top: 150px;
+    }
+    
+    /* side navbar - first item */
+    #sidebarItems:first-child{
+        padding-top: 0px;
+        margin-top: 200px;
+    }
+    
+    /* side navbar - last item */
+    #sidebarItems:last-child{
+        padding-bottom: 100px;
+    }
+    
+    /* scrollbar background - scrollable area */
+    #side::-webkit-scrollbar-track{
+        margin-top: 230px;
+        margin-bottom: 0;
+    }
+ 
+    /* carousel indicators - dots */
+    .carousel .carousel-indicators li {
+        margin-bottom: 10px;
+        height: 13px;
+        width: 13px;
+     }
+
+    /* footer */
+    .footer {
+        font-size: 15px; 
+    }
+} 
+
+
+/* media queries for xs and sm devices */
+
+/* xs devices */ 
+@media (max-device-width: 575.98px) {
+    /* text alignment */
+    #mainBody {
+        text-align: left;
+    }
+    
+    /* align body/main text */
+    .content{
+        text-align: left;
+    }
+    
+    /* wanderer title */
+    #blogName {
+        margin-right: 0;
+    }
+    
+    /* wanderer text */
+    .navbar-brand {
+        line-height: 1.8;
+        margin-right: 0;
+    }
+    
+    /* logo */
+    #logo {
+        margin-top: -3px;
+        margin-left: -12px;
+    }
+    
+    /* main menu toggle button */
+    #mainMenuButton{
+        margin-top: -3px;
+        margin-right: -12px;
+    }
+    
+    /* jumbotron for heading bar */
+    .jumbotron {
+        margin-top: 0;
+        padding-top: 52px;
+        position: fixed;
+    }
+
+    /* country heading */
+    .jumbotron #title {
+        line-height: 80px;
+    }
+    
+    /* collapsible button for bottom navbar */
+    .jumbotron #statesMenu, .jumbotron #statesMenuBar {
+        position: absolute;
+        top: -55px;
+    }
+    
+    /*navbar within jumbotron */
+    .jumbotron #states {
+        margin-top: 48px;
+        font-size: 15px;
+    }
+    
+    /* footer links - hover */
+    .urls {
+        padding: auto 0;
+        margin: auto 0;
+        font-size: 11px;
+    }
+}
+
+
+/* sm devices */
+@media (min-device-width: 576px) and (max-device-width: 767.98px) {
+    /* wanderer text */
+    .navbar-brand {
+        line-height: 1.9;
+    }
+    
+    /* logo */
+    #logo {
+        margin-top: -4px;
+    }
+    
+    /* main menu toggle button */
+    #mainMenuButton{
+        margin-top: -2px;
+    }
+    
+   /* jumbotron for heading bar */
+    .jumbotron {
+        margin-top: 0;
+        padding-top: 54px;
+        position: fixed;
+    }
+
+    /* country heading */
+    .jumbotron #title {
+        line-height: 75px;
+    }
+    
+    /* collapsible button for bottom navbar */
+    .jumbotron #statesMenu, .jumbotron #statesMenuBar {
+        position: absolute;
+        top: -67px;
+    }
+    
+    /* navbar within jumbotron */
+    .jumbotron #states {
+        margin-top: 48px;
+        font-size: 15px;
+    }
+    
+    /* sidebar menu items */
+    #sidebarItems {
+        margin-top: 200px;
+    }
+    
+    /* scrollbar background - scrollable area */
+    #side::-webkit-scrollbar-track{
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    
+    #side::-webkit-scrollbar {
+        height: 100vh;
+    }
+
+    /* side navbar - first item */
+    #sidebarItems:first-child{
+        padding-top: 0px;
+        margin-top: 170px;
+    }
+    
+    /* side navbar - last item */
+    #sidebarItems:last-child{
+        padding-bottom: 100px;
+    }
+}
