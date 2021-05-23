@@ -1,0 +1,562 @@
+
+body {
+    font-family: din-2014, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    z-index: -1;
+}
+
+/* Sub-headings */
+.sub_headings{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+/* Featured images */
+.images{
+    position: relative;
+}
+
+/* Text boxes in featured images */
+.image_text_box{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    background-color: #FFFFFF; 
+    padding: 0 5px;
+    height: auto;
+}
+
+/* Text in text boxes in featured images */
+.image_text{
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Links to more info on featured images */
+.image_links{
+    color: #000000;
+    font-size: 16px;
+}
+
+/* Links to more info on featured images - hover */
+.image_links:hover{
+    color: #000000;
+}
+
+/* Main page container */
+.container-fluid {
+    max-width: 1200px;
+}
+
+.sidebar_list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Bullet icons in sidebar */
+.bullets {
+    height: 28px;
+    width: 28px;
+    margin-right: 18px;
+    margin-left: 15px;
+}
+
+/* Sidebar list items */
+.sidebar_list .sidebar .sidebar_nav .ul a {
+    border: 0.5px solid #000000;
+    color: #000000;
+    margin-bottom: 10px;
+    height: 45px;
+    font-size: 16px;
+    font-family: din-2014, sans-serif;
+    font-weight: 400;
+    list-style: none;
+}
+
+.sidebar_list .sidebar .sidebar_nav .ul a li {
+    line-height: 1.7;
+}
+
+/* Sidebar list items - hover */
+.sidebar_list .sidebar .sidebar_nav .ul a:hover {
+    background-color: rgb(23,162,184);
+    color: #000000;
+    height: 45px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/* Sidebar list items - active class */
+.sidebar_list .sidebar .sidebar_nav .ul .active {
+    text-align: center;
+    padding-top: 8px;
+}
+
+/* Sidebar list items - active class - hover */
+.sidebar_list .sidebar .sidebar_nav .ul .active:hover {
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.earth_blue {
+    height: 30px; 
+    margin-bottom: 3px;
+}
+
+.tagline_section{
+    margin-top: 50px;
+    padding-top: 30px;
+    z-index: 0;
+    padding-right: 10px;
+    margin-left: 15px;
+}
+
+.taglines {
+    font-size: 12px;
+    font-family: din-2014, sans-serif;
+    font-weight: 200;
+    padding-left: 0px;
+}
+
+.hr {
+    height: 0.5px;
+    color: #000000;
+    padding-right: 0px;
+    width: 100%;
+    margin-left: 8px;
+}
+
+.header_container{
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.menu_bar {
+    position: absolute;
+    height: 53px;
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 5;
+    height: 83px;
+}
+
+/* Climate Conference UK */
+.title {
+    font-family: din-alternate, sans-serif; 
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    position: fixed;
+    position: absolute;
+    line-height: 2.9;
+    padding-left: 40px;
+    letter-spacing: 0.5;
+    margin-top: 20px;
+}
+
+.navbar ul {
+    top: 20px;
+    right: 15px;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu_items {
+    margin-left: 3px;
+    text-align: center;
+    font-size: 12px;
+    font-family: din-2014, sans-serif;
+    font-weight: 200;
+    padding: 6px 12px;
+    color: #000000;
+}
+
+/* Navbar text */
+.navbar .navbar-collapse .navbar-nav > .nav-item > .nav-link {
+    color: #000000;
+}
+
+.menu_buttons {
+    border: 0.5px solid #000000;
+    text-align: center;
+    clear: none;
+    font-size: 12px;
+    font-family: din-2014, sans-serif;
+    font-weight: 200;
+    color: #000000;
+    margin-left: 15px;
+}
+
+.menu_buttons:hover {
+    border: 0.5px solid #669966;
+    background-color: #669966;
+    border: none;
+    padding: 6px 12px;
+}
+
+.home_earth {
+    height: 20px;
+}
+
+.navbar-toggler  {
+    border: 0.5px solid #000000;
+    background-color: #FFFFFF;
+    z-index: 5;
+    position: absolute;
+    right: 15px;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.hr_footer {
+    margin-left: 30px;
+    width: 98%;
+}
+
+.footer_text_section {
+    margin: 20px 10px;
+    padding-left: 30px;    
+    margin-right: 0px;
+}
+
+.footer p {
+    font-size: 10px;
+}
+
+.footer_center {
+    text-align: center;
+}
+
+.footer_right {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+
+/* Media Queries */
+
+/*  xs  */ 
+@media (max-width: 575.98px) {
+    
+    .menu {
+        background-color: #FFFFFF;
+        z-index: 20;
+        margin-top: 50px;
+    }
+    
+    .menu_items {
+        font-size: 9px;
+        padding: 6px 8px;
+    }
+    
+    .menu_buttons {
+        margin-left: 10px;
+        padding: 6px 8px;
+    }
+    
+    .home_earth {
+        height: 17px;
+        padding-top: 0;
+    }
+    
+    .menu_home {
+        line-height: 0.5;
+    }
+    
+    .title {
+        padding-top: 50px;
+        background-color: #FFFFFF;
+        z-index: 5;
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .hr {
+        margin-left: 10px;
+        margin-right: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    
+    .tagline_section{
+        padding-left: 18px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+        
+    .site_header {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    
+    .taglines {
+        margin-left: 0px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a {
+        margin-bottom: 10px;
+        height: auto;
+        font-size: 10px;
+        padding-right: 0px;
+        padding-left: 3px;
+        padding-top: 10px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a:hover {
+        margin-bottom: 10px;
+        height: auto;
+        font-size: 10px;
+        padding-right: 0px;
+        padding-left: 3px;
+        padding-top: 10px;
+    }
+    
+    .bullets {
+        display: none;
+    }
+    
+    .earth_blue {
+        display: none;
+    }
+    
+    .earth_blue_2 {
+        display: none;
+    }
+    
+    .image_text_box{
+        left: 20px;
+        top: 5px;
+        margin-right: 20px;
+    }
+
+    .image_text{
+        font-size: 10px;
+    }
+    
+    .footer {
+        margin-right: 20px;
+    }
+
+    .hr_footer {
+        margin-left: 30px;
+        margin-right: 15px;
+        width: 93%;
+    }
+
+    .footer p {
+        font-size: 9px;
+    }
+    
+    .footer_right {
+        padding-right: 10px;
+    }
+}
+
+/*   sm  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .menu {
+        background-color: #FFFFFF;
+        z-index: 20;
+        margin-top: 50px;
+    }
+    
+    .home_earth {
+        height: 17px;
+        padding-top: 0;
+    }
+    
+    .title {
+        background-color: #FFFFFF;
+        z-index: 5;
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 50px;
+    }
+    
+    .tagline_section{
+        padding-left: 18px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .hr {
+        height: 0.5px;
+        color: #000000;
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .site_header {
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a {
+        margin-bottom: 10px;
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 3px;
+        padding-top: 10px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul .active {
+        padding-top: 11px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a .double {
+        line-height: 1.3;
+        padding-top: 0px;
+    }
+    
+    .bullets {
+       display: none;
+    }
+    
+    .earth_blue {
+        height: 20px; 
+        margin-bottom: 3px;
+    }
+    
+    .earth_blue_2 {
+        display: none;
+    }
+    
+    .image_text_box{
+        left: 20px;
+        top: 5px;
+    }
+
+    .image_text{
+        font-size: 10px;
+    }
+
+    .hr_footer {
+        margin-left: 30px;
+        margin-right: 15px;
+        width: 95%;
+    }
+}
+
+/*   md  */
+@media (min-width: 768px) and (max-width: 991.99px) {
+    
+    .menu {
+        background-color: #FFFFFF;
+        z-index: 20;
+        margin-top: 50px;
+    }
+    
+    .title {
+        background-color: #FFFFFF;
+        z-index: 5;
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 50px;
+    }
+    
+    .hr {
+        width: 100%;
+    }
+
+    .tagline_section{
+        padding-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .site_header {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a {
+        margin-bottom: 10px;
+        font-size: 12px;
+        padding-right: 0px;
+        padding-left: 3px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul .active {
+        padding-top: 5px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a li {
+        line-height: 3;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a .double {
+        line-height: 1.5;
+    }
+    
+    .bullets_double {
+        margin-top: 4px;
+    }
+    
+    .hr_footer {
+        margin-left: 30px;
+        margin-right: 15px;
+        width: 96%;
+    }
+}
+
+/*  lg  */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .title {
+        padding-left: 30px; 
+    }
+    
+    .navbar {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    
+    .tagline_section {
+        margin-left: 5px;
+    }
+
+    .hr {
+        height: 0.5px;
+        color: #000000;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .sub_headings{
+        margin-bottom: 13px;
+    }
+    
+    .sidebar_list .sidebar .sidebar_nav .ul a .double {
+        line-height: 1;
+    }
+    
+    .hr_footer {
+        margin-left: 30px;
+        margin-right: 15px;
+        width: 97%;
+    }
+}
