@@ -1,0 +1,60 @@
+/* background image */
+body {
+    background: url(images/Kalbarri_WA_Au.jpg) center center fixed;
+    background-size: cover;
+    color: black;
+    font-family: 'Arvo', serif;
+}
+
+/* main text */
+.heading {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* div for inputs */
+.inputs {
+    text-align: center;
+}
+
+/* each input box */
+.boxes {
+    margin: 10px;
+}
+
+/* containing div for directions */
+.directions {
+    height: auto;
+    color: white;
+    margin-top: 60px;
+}
+
+/* directions and error message */
+.directions_info {
+    text-align: center;
+    border: 0.7px solid white;
+    border-radius: 5px;
+    background-color: #343a40;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    color: black;
+    margin: 60px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
